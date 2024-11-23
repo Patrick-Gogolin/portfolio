@@ -1,0 +1,59 @@
+.about-me-profile-picture-and-info-main-container {
+    display: flex;
+    position: relative;
+    margin-bottom: -85px;
+    border: solid 5px hotpink;
+}
+
+.about-me-info-content-container {
+    padding: 0px 24px;
+    display: none;
+    width: 50%;
+}
+
+.profile-picture-container {
+    background-image: url("/assets/img/green-and-purple-shadow.svg");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    >img {
+        max-width: 100%;
+        max-height: 350px;
+    }
+}
+
+.about-me-info-content-headline-desktop{
+    font-size: clamp(45px, 8vw, 90px);
+    font-weight: 700;
+    padding-bottom: 32px;
+}
+
+.icon-text-block {
+    display: flex;
+    gap: 10px;
+    padding: 16px 0;
+}
+
+
+@media screen and (min-width:660px) {
+    .about-me-info-content-container
+     {
+        display: block;
+    }
+
+    .profile-picture-container {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-image: url("/assets/img/green-and-purple-shadow.svg");
+        background-size: cover;
+        width: 50%;
+    
+        img {
+            width: 350px;
+            max-height: none;
+        }
+    }
+}
