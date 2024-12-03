@@ -1,18 +1,16 @@
-.about-me-profile-picture-and-info-main-container {
-    display: flex;
+.about-me-profile-picture-and-info-wrapper {
     position: relative;
     margin-bottom: -85px;
-    border: solid 5px hotpink;
 }
 
-.about-me-info-content-container {
-    padding: 0px 24px;
+.about-me-info-content-wrapper {
+    padding: 0px 24px 40px 24px;
     display: none;
     width: 50%;
 }
 
-.profile-picture-container {
-    background-image: url("/assets/img/green-and-purple-shadow.svg");
+.profile-picture-wrapper {
+    background-image: url("../../../../assets/img/green-and-purple-shadow.svg");
     background-size: cover;
     width: 100%;
     display: flex;
@@ -24,7 +22,7 @@
     }
 }
 
-.about-me-info-content-headline-desktop{
+.about-me-info-content-headline{
     font-size: clamp(45px, 8vw, 90px);
     font-weight: 700;
     padding-bottom: 32px;
@@ -38,16 +36,18 @@
 
 
 @media screen and (min-width:660px) {
-    .about-me-info-content-container
-     {
+    .about-me-profile-picture-and-info-wrapper {
+        margin-bottom: 0px;
+    }
+    .about-me-info-content-wrapper{
         display: block;
     }
-
-    .profile-picture-container {
+  
+    .profile-picture-wrapper {
         position: absolute;
         right: 0;
         bottom: 0;
-        background-image: url("/assets/img/green-and-purple-shadow.svg");
+        background-image: url("../../../../assets/img/green-and-purple-shadow.svg");
         background-size: cover;
         width: 50%;
     
@@ -55,5 +55,17 @@
             width: 350px;
             max-height: none;
         }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .about-me-info-content-wrapper {
+        padding: 0px 24px 60px 64px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-me-info-content-wrapper {
+        padding: 0px 24px 60px 100px;
     }
 }

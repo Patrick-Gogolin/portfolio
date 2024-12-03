@@ -1,0 +1,26 @@
+<div class="skills-section-small-viewport-wrapper">
+    <div class="skills-section-small-viewport-headline-wrapper">
+        <span>Skills</span>
+        <div class="blue-line"></div>
+    </div>
+    <div class="skills-section-small-viewport-introduction-wrapper">
+        <p>I have gained experience in building projects with various frontend technologies and concepts.</p>
+    </div>
+    <div class="skills-section-small-viewport-icons-wrapper" [class]="{'touched': isTouched}">
+        @for(icon of icons; track icon; let i= $index) {
+        <div>
+            <img class="skill-icons"
+                [src]="'./assets/img/skills-section-icons/' + (i === icons.length - 1 && isTouched ? 'hover-continue-learning.svg' : icons[i])"
+                (touchstart)="i === icons.length - 1 && startTouch()"
+                (touchend)="i === icons.length - 1 && endOfTouch()">
+        </div>
+        }
+    </div>
+    <div class="skills-section-small-viewport-looking-for-another-skill-wrapper">
+        <div class="looking-for-another-skill-span-wrapper">
+            <span>Looking for </span><span>another skill?</span>
+        </div>
+        <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+        <button class="get-in-touch-button">Get in touch</button>
+    </div>
+</div>

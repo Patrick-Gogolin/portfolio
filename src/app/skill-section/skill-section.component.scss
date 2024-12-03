@@ -1,0 +1,13 @@
+.skills-content-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:660px) {
+    .skills-content-container {
+        background-image: url("../../assets/img/curved-background.svg");
+        background-repeat: no-repeat;
+        margin-top: -190px;
+        position: relative;
+    }
+}

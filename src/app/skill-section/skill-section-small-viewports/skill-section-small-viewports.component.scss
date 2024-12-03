@@ -1,0 +1,119 @@
+.skill-icons {
+    width: 70px;
+    height: 90px;
+}
+
+.skills-section-small-viewport-icons-wrapper {
+    padding: 0px 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+.skills-section-small-viewport-icons-wrapper > :nth-last-child(2) {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+
+.skills-section-small-viewport-icons-wrapper > :last-child {
+    grid-column: 2/4;
+    grid-row: 4;
+}
+
+.skills-section-small-viewport-icons-wrapper>div:last-child {
+    position: relative;
+}
+
+.skills-section-small-viewport-icons-wrapper > div:last-child::before {
+    content: '';
+    visibility: visible;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+ }
+
+.skills-section-small-viewport-icons-wrapper.touched > div:last-child::before {
+    content: '';
+    position: absolute;
+    bottom: 75%;
+    background-image: url('../../../assets/img/skills-section-icons/hover-continue-learning-dialog.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 100px;
+    transform: translateX(-5px);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+ }
+ 
+
+.skills-section-small-viewport-headline-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 3em 0px 0px 8px;
+
+    >span {
+        font-size: 45px;
+        font-weight: 700;
+    }
+}
+
+.blue-line {
+    width: 75%;
+    border: 2px solid #1CDAE6;
+}
+
+.skills-section-small-viewport-introduction-wrapper {
+    padding: 1em 8px;
+}
+
+.skills-section-small-viewport-looking-for-another-skill-wrapper {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skills-section-small-viewport-looking-for-another-skill-wrapper :nth-child(1) {
+    font-size: 24px;
+    text-align: center;
+}
+
+.skills-section-small-viewport-looking-for-another-skill-wrapper :nth-child(2) {
+    padding: 0em 8px;
+    text-align: center;
+}
+
+.looking-for-another-skill-span-wrapper :nth-child(2) {
+    color:#9747FF;
+}
+
+.get-in-touch-button {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 15px 30px;
+    color: white;
+    background-color: #70E61C;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        background-color:#9747FF;
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (min-width:660px) {
+
+    .skills-section-small-viewport-wrapper {
+        display: none;
+    }
+}

@@ -63,7 +63,7 @@ button {
 
     &:hover {
         background-color:#9747FF;
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 
@@ -120,7 +120,7 @@ button {
     padding-left: 3px;
 }
 
-@media screen and (max-width:1140px) {
+@media screen and (max-width:1200px) {
     h1 {
         font-size: 100px;
         line-height: 130px;
@@ -132,6 +132,10 @@ button {
 
     .vertical-text-i-am {
         font-size: 80px;
+    }
+
+    .scroll-down-container {
+        right: 64px;
     }
 }
 

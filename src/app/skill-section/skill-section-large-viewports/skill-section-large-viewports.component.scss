@@ -1,0 +1,207 @@
+.skills-section-large-viewport-wrapper {
+    display: flex;
+}
+
+.skills-section-large-viewport-icons-wrapper {
+    display: none;
+}
+
+.skills-section-large-viewport-description-wrapper {
+    display: none;
+}
+
+.skill-icons-not-moving {
+    width: 70px;
+    height: 90px;
+}
+
+.skill-icons-moving {
+    width: 70px;
+    height: 90px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+        animation: sink-back 0.5s ease-in-out 0.3s forwards;
+    }
+}
+
+@keyframes sink-back {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.skills-section-large-viewport-icons-wrapper>div:last-child {
+    position: relative;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.skills-section-large-viewport-icons-wrapper>div:last-child::before {
+   content: url('../../../assets/img/skills-section-icons/hover-continue-learning-dialog.svg');
+   position: absolute;
+   bottom: 68%;
+   pointer-events: none;
+   transform: scale(0);
+   transition: transform 150ms ease-out;
+}
+
+.skills-section-large-viewport-icons-wrapper>div:last-child:hover::before {
+   display: block;
+    transform: scale(1);
+}
+
+.skills-section-large-viewport-icons-wrapper.touched > div:last-child::before {
+    content: url('../../../assets/img/skills-section-icons/hover-continue-learning-dialog.svg');
+    position: absolute;
+   bottom: 68%;
+   pointer-events: none;
+   transform: scale(1);
+    visibility: visible;
+}
+
+.describe-of-working-idea-p {
+    padding-right: 24px;
+}
+
+.looking-for-another-skill-span-wrapper {
+    font-size: clamp(23px, 3vw, 32px);
+    font-weight: 700;
+    padding-right: 24px;
+}
+
+.looking-for-another-skill-span-wrapper :nth-child(2) {
+    color:#9747FF;
+}
+
+.feel-free-to-contact-me-p {
+    padding-right: 24px;
+}
+
+.skills-section-large-viewport-headline-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 3em 0em;
+
+    >p {
+        font-size: 45px;
+        font-weight: 700;
+    }
+}
+
+.blue-line-large-viewport {
+    width: 75%;
+    border: 2px solid #1CDAE6
+}
+
+.get-in-touch-button {
+    font-size: 23px;
+    padding: 15px 30px;
+    color: white;
+    background-color: #70E61C;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        background-color:#9747FF;
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (min-width:660px) {
+    .skills-section-large-viewport-icons-wrapper {
+        width: 50%;
+        padding: 200px 0px 200px 24px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    .skills-section-large-viewport-description-wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        padding-top: 120px;
+    }
+
+    .skills-section-large-viewport-headline-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    
+        >p {
+            font-size: clamp(45px, 7vw, 90px);
+            font-weight: 700;
+        }
+    }
+
+    @media screen and (min-width:800px) {
+        .skills-section-large-viewport-wrapper {
+            gap: 24px;
+        }
+
+        .skill-icons-not-moving {
+            width: 90px;
+            height: 110px;
+        }
+
+        .skill-icons-moving {
+            width: 90px;
+            height: 110px;
+        }
+
+        .describe-of-working-idea-p {
+            padding-right: 24px;
+        }
+    }
+
+    @media screen and (min-width:900px) {
+        .describe-of-working-idea-p {
+            padding-right: 64px;
+        }
+
+        .feel-free-to-contact-me-p {
+            padding-right: 64px;
+        }
+
+        .skills-section-large-viewport-icons-wrapper {
+            padding: 200px 64px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .describe-of-working-idea-p {
+            padding-right: 100px;
+        }
+
+        .feel-free-to-contact-me-p {
+            padding-right: 100px;
+        }
+
+        .skills-section-large-viewport-icons-wrapper {
+            padding: 200px 100px;
+            gap: 32px;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .skills-section-large-viewport-icons-wrapper {
+            gap: 64px;
+        }
+
+        .skills-section-large-viewport-description-wrapper {
+            padding-top: 0px;
+        }
+    }
+}

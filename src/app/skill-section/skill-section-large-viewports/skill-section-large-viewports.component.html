@@ -1,0 +1,27 @@
+<div class="skills-section-large-viewport-wrapper">
+    <div class="skills-section-large-viewport-icons-wrapper" [class]="{'touched': isTouched}">
+        @for(icon of icons; track icon; let i= $index) {
+        <div>
+            <img [class]="skillIcons(icons, i)" [src]="'./assets/img/skills-section-icons/' + (i === icons.length - 1 && (hover || isTouched) ? 'hover-' + icons[i] : icons[i])"
+                alt="skill-icon" (mouseenter)="i === icons.length - 1 ? hover = true : null"
+                (mouseleave)="i === icons.length - 1 ? hover = false : null"
+                (touchstart)="i === icons.length - 1 && startTouch()"
+                (touchend)="i === icons.length - 1 && endOfTouch()">
+        </div>
+        }
+    </div>
+    <div class="skills-section-large-viewport-description-wrapper">
+        <div class="skills-section-large-viewport-headline-wrapper">
+            <p>Skills</p>
+            <div class="blue-line-large-viewport"></div>
+        </div>
+        <p class="describe-of-working-idea-p">My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development.</p>
+        <div class="looking-for-another-skill-span-wrapper">
+            <span>Looking for </span><span>another skill?</span>
+        </div>
+        <p class="feel-free-to-contact-me-p">Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+        <div>
+            <button class="get-in-touch-button">Get in touch</button>
+        </div>
+    </div>
+</div>

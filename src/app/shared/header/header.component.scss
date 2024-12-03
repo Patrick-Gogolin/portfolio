@@ -5,7 +5,7 @@ header {
     top: 0;
 }
 
-.header-content-container {
+.header-content-wrapper {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -13,7 +13,7 @@ header {
     padding: 37px 100px 37px 100px;
 }
 
-.menu-container {
+.menu-wrapper {
     display: flex;
     align-items: center;
     gap: 29px;
@@ -36,18 +36,24 @@ header {
     display: none;
 }
 
+@media screen and (max-width:1200px) {
+  .header-content-wrapper {
+    padding: 37px 64px 37px 64px;
+}
+}
+
 @media screen and (max-width:900px) {
   a {
     font-size: 16px;
   }
 
-  .header-content-container {
+  .header-content-wrapper {
     padding: 37px 24px 37px 24px;
 }
 }
 
 @media screen and (max-width:660px) {
-    .menu-container {
+    .menu-wrapper {
       display: none;
     }
 
@@ -57,7 +63,7 @@ header {
   }
 
   @media screen and (max-width:380px) {
-  .header-content-container{
+  .header-content-wrapper{
     padding: 37px 8px 37px 8px;
   }
 }
