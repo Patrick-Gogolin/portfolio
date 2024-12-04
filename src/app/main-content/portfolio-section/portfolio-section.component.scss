@@ -1,0 +1,21 @@
+.portfolio-section-content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: solid 5px magenta;
+    padding-top: 100px;
+}
+
+.portfolio-section-headline-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.purple-line {
+    width: clamp(20px, 10vmin, 68px);
+    border: solid 2px #9747FF;
+}
+
+.portfolio-span {
+    font-size: clamp(45px, 10vmin, 90px);
+    font-weight: 700;
+}

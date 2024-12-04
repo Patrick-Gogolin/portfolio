@@ -35,8 +35,10 @@ export class SkillSectionLargeViewportsComponent {
 
   @HostListener('touchstart', ['$event'])
   onTouchStart(event: TouchEvent): void {
-    const target = event.target as HTMLElement;
+    const target = event.target as HTMLImageElement;
     const lastIcon = this.icons[this.icons.length - 1];
+    console.log(target.src);
+    console.log(lastIcon);
   
     if (target instanceof HTMLImageElement) {
       if (target.src.includes(lastIcon)) {
