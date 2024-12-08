@@ -1,7 +1,6 @@
 .portfolio-section-content-wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    border: solid 5px magenta;
     padding-top: 100px;
 }
 
@@ -18,4 +17,8 @@
 .portfolio-span {
     font-size: clamp(45px, 10vmin, 90px);
     font-weight: 700;
+}
+
+.introduction-p {
+    padding: 1em 8px;
 }
