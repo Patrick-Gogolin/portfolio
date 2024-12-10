@@ -1,8 +1,16 @@
 <div class="portfolio-section-content-wrapper">
+    <img class="aqua-shadow" src="./assets/img/aqua-shadow.png" alt="">
+    <img class="green-shadow" src="./assets/img/green-shadow.svg" alt="">
     <div class="portfolio-section-headline-wrapper">
         <div class="purple-line"></div>
         <span class="portfolio-span">Portfolio</span>
     </div>
     <p class="introduction-p">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+    <div class="mockup-picture-main-wrapper">
+     @for(project of projects; track $index) {
+        <app-single-project [projectImage]="project.projectImage">
+            
+        </app-single-project>
+     }
+    </div>
 </div>
-

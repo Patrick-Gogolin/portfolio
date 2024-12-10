@@ -30,6 +30,7 @@
     0% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -42,25 +43,25 @@
 }
 
 .skills-section-large-viewport-icons-wrapper>div:last-child::before {
-   content: url('../../../assets/img/skills-section-icons/hover-continue-learning-dialog.svg');
-   position: absolute;
-   bottom: 68%;
-   pointer-events: none;
-   transform: scale(0);
-   transition: transform 150ms ease-out;
+    content: url('../../../assets/img/skills-section-icons/hover-continue-learning-dialog.svg');
+    position: absolute;
+    bottom: 68%;
+    pointer-events: none;
+    transform: scale(0);
+    transition: transform 150ms ease-out;
 }
 
 .skills-section-large-viewport-icons-wrapper>div:last-child:hover::before {
-   display: block;
+    display: block;
     transform: scale(1);
 }
 
-.skills-section-large-viewport-icons-wrapper.touched > div:last-child::before {
+.skills-section-large-viewport-icons-wrapper.touched>div:last-child::before {
     content: url('../../../assets/img/skills-section-icons/hover-continue-learning-dialog.svg');
     position: absolute;
-   bottom: 68%;
-   pointer-events: none;
-   transform: scale(1);
+    bottom: 68%;
+    pointer-events: none;
+    transform: scale(1);
     visibility: visible;
 }
 
@@ -75,7 +76,7 @@
 }
 
 .looking-for-another-skill-span-wrapper :nth-child(2) {
-    color:#9747FF;
+    color: #9747FF;
 }
 
 .feel-free-to-contact-me-p {
@@ -101,7 +102,7 @@
 }
 
 .get-in-touch-button {
-    font-size: 23px;
+    font-size: clamp(16px, 2vmin, 24px);
     padding: 15px 30px;
     color: white;
     background-color: #70E61C;
@@ -109,11 +110,6 @@
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
-
-    &:hover {
-        background-color:#9747FF;
-        transform: scale(1.05);
-    }
 }
 
 @media screen and (min-width:660px) {
@@ -124,7 +120,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
-    
+
     .skills-section-large-viewport-description-wrapper {
         width: 50%;
         display: flex;
@@ -139,7 +135,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 16px;
-    
+
         >p {
             font-size: clamp(45px, 7vw, 90px);
             font-weight: 700;
@@ -203,5 +199,22 @@
         .skills-section-large-viewport-description-wrapper {
             padding-top: 0px;
         }
+    }
+}
+
+/* Hover-Effekt auf Geräten mit Maus */
+@media (hover: hover) and (pointer: fine) {
+    .get-in-touch-button:hover {
+        background-color: #9747FF;
+        transform: scale(1.05);
+    }
+}
+
+/* Keine Hover-Effekte auf Touch-Geräten */
+@media (hover: none),
+(pointer: coarse) {
+    .get-in-touch-button:hover {
+        background-color: #70E61C;
+        transform: none;
     }
 }

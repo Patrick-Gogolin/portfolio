@@ -68,11 +68,6 @@ button {
     cursor: pointer;
     margin-top: 1em;
     transition: transform 0.3s ease, background-color 0.3s ease;
-
-    &:hover {
-        background-color: #9747FF;
-        transform: scale(1.05);
-    }
 }
 
 .reference-icons-and-green-line-content-wrapper {
@@ -142,5 +137,21 @@ button {
 @media screen and (min-width: 1200px) {
     .scroll-down-content-wrapper {
         right: 100px;
+    }
+}
+
+/* Hover-Effekt auf Geräten mit Maus */
+@media (hover: hover) and (pointer: fine) {
+    button:hover {
+        background-color: #9747FF;
+        transform: scale(1.05);
+    }
+}
+
+/* Keine Hover-Effekte auf Touch-Geräten */
+@media (hover: none), (pointer: coarse) {
+    button:hover {
+        background-color: #70E61C;
+        transform: none;
     }
 }
