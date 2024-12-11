@@ -1,31 +1,27 @@
-import { Component, Input, HostListener, OnInit } from '@angular/core';
+import { Component, Input, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SingleProject } from '../../../shared/interfaces/single-project';
 
 @Component({
   selector: 'app-single-project',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent implements OnInit {
-  @Input() currentProjects: [] = [];
-  @Input() projectName:string = '';
-  @Input() projectSkills: [] = [];
-  @Input() projectImage:string = '';
-  @Input() projectDescription:string = '';
-  @Input() projectLink:string = '';
-  @Input() githubLink:string = '';
 
-  isActive: boolean = false;
+  @Input() project: SingleProject | null = null;
+  @Input() isActive: boolean = false;
 
-  // Überprüfen, ob es sich um ein Touch-Gerät handelt
+  @Output() activate = new EventEmitter<void>();
+
   isTouchDevice: boolean = false;
 
   constructor() {
   }
 
   ngOnInit() {
-    // Verbesserte Touch-Geräte-Erkennung
     this.isTouchDevice = !!(
       ('ontouchstart' in window || navigator.maxTouchPoints > 0) &&
       !window.matchMedia('(hover: hover)').matches
@@ -36,9 +32,7 @@ export class SingleProjectComponent implements OnInit {
   @HostListener('click')
   onClick(): void {
     if (this.isTouchDevice) {
-      this.isActive = !this.isActive;
-      console.log(this.isActive);
+      this.activate.emit();
     }
   }
 }
-

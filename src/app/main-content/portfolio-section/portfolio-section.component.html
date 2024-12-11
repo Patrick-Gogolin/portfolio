@@ -7,8 +7,8 @@
     </div>
     <p class="introduction-p">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
     <div class="mockup-picture-main-wrapper">
-     @for(project of projects; track $index) {
-        <app-single-project [projectImage]="project.projectImage">
+     @for(project of projects; track i; let i = $index) {
+        <app-single-project [project]="project" [isActive]="isActive(i)" (activate)="setActiveProject(i)">
             
         </app-single-project>
      }

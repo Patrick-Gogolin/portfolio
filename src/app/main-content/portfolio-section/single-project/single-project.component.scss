@@ -1,6 +1,6 @@
 .mockup-picture-wrapper {
     overflow: hidden;
-    width: 280px;
+    width: 300px;
     border: 1px solid #70E61C;
     border-radius: 15px;
     display: flex;
@@ -8,6 +8,38 @@
     padding: 3em 1em;
     background: #141D2F;
     position: relative;
+}
+
+.mockup-picture-wrapper img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.button-wrapper {
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+
+    >button {
+        padding: 15px 30px 15px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    >:nth-child(1) {
+        border: 1px solid #1CDAE6;
+        background: transparent;
+        color: white;
+    }
+
+    >:nth-child(2) {
+        border: none;
+        background: #9747FF;
+        color: white;
+    }
 }
 
 .overlayer {
@@ -19,7 +51,20 @@
     height: 50%;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mockup-picture-wrapper.active .button-wrapper {
+    opacity: 1;
+    visibility: visible;
 }
 
 .mockup-picture-wrapper.active .overlayer {
@@ -29,29 +74,35 @@
 
 .mockup-picture-wrapper.active img {
     transform: scale(1.9);
-}
-
-.mockup-picture-wrapper:hover .overlayer {
-    opacity: 1;
-    visibility: visible;
+    opacity: 0.5;
 }
 
 .headline {
     text-align: center;
-    font-size: 24px;
-    color: purple;
+    font-size: clamp(16px, 3vw, 24px);
+    color: #9747FF;
+    font-weight: 700;
 }
 
 .p-tag {
     text-align: center;
-    font-size: 16px;
+    font-size: clamp(12px, 2vw, 16px);
     color: black;
 }
 
-.mockup-picture-wrapper img {
-    max-width: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+.skill-wrapper {
+    color: #70E61C;
+    font-size: clamp(12px, 2vw, 16px);
+}
+
+.skill:not(:last-child)::after {
+    content: ' | ';
+}
+
+@media screen and (min-width: 460px) {
+    .mockup-picture-wrapper {
+        width: 400px;
+    }
 }
 
 @media screen and (min-width: 660px) {
@@ -66,7 +117,21 @@
         visibility: visible;
     }
 
+    .mockup-picture-wrapper:hover .button-wrapper {
+        opacity: 1;
+        visibility: visible;
+    }
+
     .mockup-picture-wrapper:hover img {
         transform: scale(1.9);
+        opacity: 0.5;
+    }
+
+    .button-wrapper button:nth-child(1):hover {
+        background: #1CDAE6;
+    }
+
+    .button-wrapper button:nth-child(2):hover {
+        background: #70E61C;
     }
 }

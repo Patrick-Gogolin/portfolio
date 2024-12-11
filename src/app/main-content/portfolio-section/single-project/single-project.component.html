@@ -1,7 +1,16 @@
-<div class="mockup-picture-wrapper" [class.active]="isActive">
-    <img src= "{{ projectImage }}" alt="">
+<div class="mockup-picture-wrapper" [class]="{'active': isActive}">
+    <img src= "{{ project?.projectImage }}" alt="">
+    <div class="button-wrapper">
+        <button>Github</button>
+        <button>Livetest</button>
+    </div>
     <div class="overlayer">
-        <p class="headline">El Pollo loco</p>
-        <p class="p-tag">Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</p>
+        <p class="headline">{{ project?.projectName }}</p>
+        <p class="p-tag">{{ project?.projectDescription}}</p>
+        <div class="skill-wrapper">
+            @for(skill of project?.projectSkills; track i; let i = $index ) {
+                <span class="skill">{{ skill }}</span>
+            }
+        </div>
     </div>
 </div>

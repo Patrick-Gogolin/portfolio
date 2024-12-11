@@ -5,5 +5,4 @@ export interface SingleProject {
     projectDescription: string;
     projectLink: string;
     githubLink: string;
-    key: string;
   }
