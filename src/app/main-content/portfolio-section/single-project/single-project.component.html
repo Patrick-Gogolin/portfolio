@@ -1,12 +1,12 @@
 <div class="mockup-picture-wrapper" [class]="{'active': isActive}">
-    <img src= "{{ project?.projectImage }}" alt="">
+    <img (touchstart)="openProjectOverview()" src= "{{ project?.projectImage }}" alt="">
     <div class="button-wrapper">
-        <button>Github</button>
-        <button>Livetest</button>
+        <a (mouseover)="onMouseOver()" (mouseover)="onMouseOut()" [href]="project?.githubLink" target="_blank" class="button" [class]="{'pointer': !buttonActive}">Github</a>
+        <a [href]="'https://www.google.de/'" target="_blank" class="button" [class]="{'pointer': !buttonActive}">Live test</a>
     </div>
-    <div class="overlayer">
+    <div (touchstart)="openProjectOverview()" class="overlayer">
         <p class="headline">{{ project?.projectName }}</p>
-        <p class="p-tag">{{ project?.projectDescription}}</p>
+        <p class="project-description">{{ project?.projectDescription}}</p>
         <div class="skill-wrapper">
             @for(skill of project?.projectSkills; track i; let i = $index ) {
                 <span class="skill">{{ skill }}</span>

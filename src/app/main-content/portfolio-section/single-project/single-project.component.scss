@@ -1,6 +1,6 @@
 .mockup-picture-wrapper {
     overflow: hidden;
-    width: 300px;
+    width: 100%;
     border: 1px solid #70E61C;
     border-radius: 15px;
     display: flex;
@@ -18,12 +18,13 @@
 
 .button-wrapper {
     opacity: 0;
+    z-index: -9999;
     transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
     position: absolute;
     display: flex;
     gap: 10px;
 
-    >button {
+    >.button {
         padding: 15px 30px 15px 30px;
         border-radius: 10px;
         cursor: pointer;
@@ -39,6 +40,10 @@
         border: none;
         background: #9747FF;
         color: white;
+    }
+
+    >a{
+        text-decoration: none;
     }
 }
 
@@ -64,6 +69,7 @@
 
 .mockup-picture-wrapper.active .button-wrapper {
     opacity: 1;
+    z-index: 0;
     visibility: visible;
 }
 
@@ -79,36 +85,29 @@
 
 .headline {
     text-align: center;
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: clamp(16px, 2vw, 24px);
     color: #9747FF;
     font-weight: 700;
 }
 
-.p-tag {
+.project-description{
+    width: 300px;
     text-align: center;
-    font-size: clamp(12px, 2vw, 16px);
+    font-size: clamp(12px, 1vw, 16px);
     color: black;
 }
 
 .skill-wrapper {
     color: #70E61C;
-    font-size: clamp(12px, 2vw, 16px);
+    font-size: clamp(12px, 1vw, 16px);
 }
 
 .skill:not(:last-child)::after {
     content: ' | ';
 }
 
-@media screen and (min-width: 460px) {
-    .mockup-picture-wrapper {
-        width: 400px;
-    }
-}
-
-@media screen and (min-width: 660px) {
-    .mockup-picture-wrapper {
-        width: 500px;
-    }
+.pointer {
+    pointer-events: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -119,6 +118,7 @@
 
     .mockup-picture-wrapper:hover .button-wrapper {
         opacity: 1;
+        z-index: 0;
         visibility: visible;
     }
 

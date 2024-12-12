@@ -1,4 +1,4 @@
-import { Component, Input, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SingleProject } from '../../../shared/interfaces/single-project';
 
@@ -9,30 +9,37 @@ import { SingleProject } from '../../../shared/interfaces/single-project';
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss'
 })
-export class SingleProjectComponent implements OnInit {
+export class SingleProjectComponent {
+
 
   @Input() project: SingleProject | null = null;
   @Input() isActive: boolean = false;
 
   @Output() activate = new EventEmitter<void>();
 
-  isTouchDevice: boolean = false;
+  buttonActive = false;
 
   constructor() {
   }
 
-  ngOnInit() {
-    this.isTouchDevice = !!(
-      ('ontouchstart' in window || navigator.maxTouchPoints > 0) &&
-      !window.matchMedia('(hover: hover)').matches
-    );
-    console.log(this.isTouchDevice);
+
+  onMouseOver(): void {
+    setTimeout(() => {
+      this.buttonActive = !this.buttonActive;
+      console.log(this.buttonActive);
+    }, 100);
   }
 
-  @HostListener('click')
-  onClick(): void {
-    if (this.isTouchDevice) {
-      this.activate.emit();
-    }
+  onMouseOut(): void {
+    setTimeout(() => {
+      this.buttonActive = !this.buttonActive;
+    }, 100);
+  }
+
+  openProjectOverview() {
+    this.activate.emit();
+    setTimeout(() => {
+      this.buttonActive = !this.buttonActive;
+    }, 100);
   }
 }

@@ -1,3 +1,7 @@
+.custom-style {
+    width: 100%
+}
+
 .portfolio-section-content-wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -26,7 +30,7 @@
 }
 
 .purple-line {
-    width: clamp(20px, 10vmin, 68px);
+    width: 8px;
     border: solid 2px #9747FF;
 }
 
@@ -44,13 +48,54 @@
     flex-direction: column;
     align-items: center;
     gap: 2em;
+    padding: 0px 8px;
 }
 
 @media screen and (min-width:660px) {
 
+    .custom-style {
+        width: 47%
+    }
+
     .mockup-picture-main-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 0px 24px;
+    }
+
+    .introduction-p {
+        padding: 1em 24px;
+    }
+    .purple-line {
+        width: 24px;
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    .mockup-picture-main-wrapper {
+        padding: 0px 60px;
+    }
+
+    .introduction-p {
+        padding: 1em 60px;
+    }
+    .purple-line {
+        width: 60px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .mockup-picture-main-wrapper {
+        padding: 0px 100px;
+    }
+
+    .introduction-p {
+        padding: 1em 100px;
+    }
+    .purple-line {
+        width: 100px;
     }
 }
