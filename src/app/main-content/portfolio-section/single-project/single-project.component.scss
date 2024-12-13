@@ -23,6 +23,7 @@
     position: absolute;
     display: flex;
     gap: 10px;
+    pointer-events: none;
 
     >.button {
         padding: 15px 30px 15px 30px;
@@ -73,6 +74,10 @@
     visibility: visible;
 }
 
+.mockup-picture-wrapper.touch-active .button-wrapper {
+    pointer-events: auto;
+}
+
 .mockup-picture-wrapper.active .overlayer {
     opacity: 1;
     visibility: visible;
@@ -120,6 +125,7 @@
         opacity: 1;
         z-index: 0;
         visibility: visible;
+        pointer-events: auto;
     }
 
     .mockup-picture-wrapper:hover img {

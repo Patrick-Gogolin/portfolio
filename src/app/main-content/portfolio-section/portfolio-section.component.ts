@@ -13,6 +13,7 @@ import { SingleProject } from  '../../shared/interfaces/single-project';
 export class PortfolioSectionComponent {
 
   activeProjectIndex: number | null = null;
+  buttonActive: boolean = false;
 
   setActiveProject(index: number): void {
     if (this.activeProjectIndex === index) {
@@ -20,7 +21,6 @@ export class PortfolioSectionComponent {
     } else {
       this.activeProjectIndex = index;
     }
-    console.log(this.activeProjectIndex);
   }
   
   isActive(index:number): boolean {
