@@ -1,0 +1,28 @@
+<div class="testimonial-section-content-wrapper">
+   <div class="testimonials-main-container">
+    <div class="green-line"></div>
+        <div class="img-container">
+            <div class="img-container-people">
+                <img src="../../../assets/img/testimonials/testimonial_one.png" alt="">
+            </div>
+        </div>
+       <div class="recommendations-wrapper">
+            <p>{{ testimonials[currentTestimonial].testimonial }}</p>
+            <div>
+                <div class="blue-line"></div>
+                <div>
+                    <span>{{ testimonials[currentTestimonial].firstCharacterOfFirstName }} {{ testimonials[currentTestimonial].lastName }}</span><span> - </span><span>{{ testimonials[currentTestimonial].role }}</span>
+                </div>
+            </div>
+        </div>
+       <div class="change-testimonial-wrapper">
+            <img (click)="previousTestimonial()" class="arrow-back" src="../../../assets/img/testimonials/arrow_back.svg" alt="">
+            <div class="ellipse-wrapper">
+                @for(testimonial of testimonials; track testimonial; let i= $index) {
+                <img [src]="currentTestimonial === i ? '../../../assets/img/testimonials/ellipse_green.svg' : '../../../assets/img/testimonials/ellipse_purple.svg'" alt="">
+                }
+            </div>
+            <img (click)="nextTestimonial()" class="arrow-forward" src="../../../assets/img/testimonials/arrow_forward.svg" alt="">
+       </div>
+   </div>
+</div>
