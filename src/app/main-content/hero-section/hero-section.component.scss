@@ -110,6 +110,23 @@ button {
     font-size: 24px;
     font-weight: 400;
     padding-left: 3px;
+    animation: float 1000ms ease-in-out infinite;
+}
+
+//.arrow-down-img {
+    //animation: float 1000ms ease-in-out infinite;
+//}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (min-width: 660px) {
