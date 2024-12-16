@@ -4,11 +4,12 @@ import { AboutMeSectionComponent } from './about-me-section/about-me-section.com
 import { SkillSectionComponent } from '../skill-section/skill-section.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 import { TestimonialSectionComponent } from './testimonial-section/testimonial-section.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [HeroSectionComponent, AboutMeSectionComponent, SkillSectionComponent, PortfolioSectionComponent,TestimonialSectionComponent],
+  imports: [HeroSectionComponent, AboutMeSectionComponent, SkillSectionComponent, PortfolioSectionComponent,TestimonialSectionComponent, ContactSectionComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

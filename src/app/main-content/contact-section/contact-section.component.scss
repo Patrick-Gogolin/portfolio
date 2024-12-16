@@ -1,0 +1,52 @@
+.contact-me-section-content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+}
+
+.headline-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    
+    >span {
+        font-size: clamp(45px, 8vmin, 90px);
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    
+    >.green-line {
+        border: 2px solid #70E61C;
+        width: clamp(60px, 32vw, 500px);
+    }
+}
+
+.contact-me-p-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    >.got-a-problem-to-solve-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: clamp(24px, 5vw, 32px);
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    > :nth-child(2),
+    > :nth-child(4) {
+    padding: 0px 8px;
+  }
+}
+
+.contact-me-span {
+    font-weight: 700;
+}
+
+.blue-line {
+    width: 8px;
+    border: 2px solid #1CDAE6
+}
