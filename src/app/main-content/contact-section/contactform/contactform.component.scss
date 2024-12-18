@@ -1,5 +1,5 @@
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=text],input[type=email], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
@@ -7,27 +7,70 @@ input[type=text], select, textarea {
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background: #141D2F;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
+    padding: 15px 25px;
+    height: 40px;
   }
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color:#B6B6B6;
     color: white;
-    padding: 12px 20px;
+    padding: 15px 30px;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
+    display: block;
+    margin: 3em auto;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #45a049;
   }
+
   
   /* Add a background color and some padding around the form */
   .contact-form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    padding: 50px 8px;
   }
+
+  input::placeholder,
+textarea::placeholder {
+  color: white; /* Deine gewünschte Farbe */
+  opacity: 1;  /* Optional: 1 sorgt dafür, dass die Farbe voll sichtbar ist */
+}
+
+input:focus, 
+textarea:focus {
+  outline: none; /* Entfernt die standardmäßige Umrandung */
+  box-shadow: none; /* Entfernt eventuelle Schatten */
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.privacy-policy-span {
+    color: #9747FF;
+}
+
+@media screen and (min-width: 660px) {
+    .contact-form {
+        padding: 50px 24px;
+      }
+}
+
+@media screen and (min-width: 900px) {
+    .contact-form {
+        padding: 0px 64px 0px 0px;
+      }
+}

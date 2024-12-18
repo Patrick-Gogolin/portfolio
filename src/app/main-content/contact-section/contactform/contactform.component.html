@@ -1,23 +1,29 @@
 <div class="contact-form">
-    <form action="action_page.php">
-  
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+        <input #message="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="firstname" placeholder="Your name"
+            aria-label="First Name" required>
+            @if (!message.valid && message.touched && !message.disabled) {
+                <span>Please enter Message</span>
+            }
+
+        <input #message="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email"
+            aria-label="Email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            @if (!message.valid && message.touched && !message.disabled) {
+                <span>Please enter Message</span>
+            }
+
+        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message"
+            style="height:200px" aria-label="Subject" required></textarea>
+        @if (!message.valid && message.touched && !message.disabled) {
+            <span>Please enter Message</span>
+        }
+
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+            <p> I've read the <span class="privacy-policy-span">privacy policy</span> and agree to the processing of my data as outlined</p>
+        </div>
+
+        <input type="submit" value="Send message">
     </form>
 </div>
