@@ -11,6 +11,13 @@
     bottom: 20px;
 }
 
+.purple-shadow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -9999;
+}
+
 .headline-wrapper {
     display: flex;
     align-items: center;
@@ -104,5 +111,25 @@
 
     .blue-line {
         width: 64px;
+    }
+
+    .purple-shadow {
+        position: absolute;
+        bottom: -250px;
+        z-index: -9999;
+        height: 950px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-me-p-wrapper {
+        >.got-a-problem-to-solve-wrapper {
+            gap: 36px;
+        }
+    }
+
+    .contact-me-p-wrapper > :nth-child(2),
+    .contact-me-p-wrapper > :nth-child(4) {
+        padding-inline: 100px 0px;
     }
 }

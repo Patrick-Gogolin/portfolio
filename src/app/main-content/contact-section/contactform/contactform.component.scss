@@ -19,7 +19,7 @@ input[type=text],input[type=email], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color:#B6B6B6;
+    background-color:#9747FF;
     color: white;
     padding: 15px 30px;
     border: none;
@@ -30,8 +30,15 @@ input[type=text],input[type=email], select, textarea {
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
+  input[type=submit]:disabled {
+    background-color:#B6B6B6;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 3em auto;
   }
 
   
@@ -50,6 +57,7 @@ input:focus,
 textarea:focus {
   outline: none; /* Entfernt die standardmäßige Umrandung */
   box-shadow: none; /* Entfernt eventuelle Schatten */
+  border: solid 1px #70E61C;
 }
 
 .checkbox-wrapper {
@@ -61,6 +69,19 @@ textarea:focus {
 
 .privacy-policy-span {
     color: #9747FF;
+}
+
+.error-message {
+    color: #E61C40;
+    padding-inline: 8px 0px;
+}
+
+input.invalid-border, textarea.invalid-border, select.invalid-border {
+    border: solid 1px #E61C40;
+}
+
+input.valid-border, textarea.valid-border, select.valid-border {
+    border: solid 1px #70E61C;;
 }
 
 @media screen and (min-width: 660px) {
