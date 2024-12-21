@@ -14,16 +14,16 @@ export class TestimonialSectionComponent {
 
   testimonials: Testimonial[] = [
     {
-     img: "../../../assets/img/testimonials/testimonial_one.png",
-     firstCharacterOfFirstName: "V.",
-     lastName: "Schuster",
+     img: "../../../assets/img/testimonials/patrick-kanert.jpg",
+     firstCharacterOfFirstName: "P.",
+     lastName: "Kanert",
      role: "Team Partner",
      testimonial: "Patrick really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment"
     },
     {
-      img: "../../../assets/img/testimonials/testimonial_one.png",
-      firstCharacterOfFirstName: "M.",
-      lastName: "Maus",
+      img: "../../../assets/img/testimonials/sandor-balaszi.jpg",
+      firstCharacterOfFirstName: "S.",
+      lastName: "Balaszi",
       role: "Team Partner",
       testimonial: "Paddy was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals."
      },
