@@ -5,11 +5,26 @@ header {
     top: 0;
 }
 
+.logo-wrapper {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.i-dot {
+  color: #70E61C;
+}
+
+.k {
+  color: #9747FF;
+}
+
 .header-content-wrapper {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 37px 100px 37px 100px;
 }
 
