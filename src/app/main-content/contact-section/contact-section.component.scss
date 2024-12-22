@@ -89,6 +89,10 @@
     .blue-line {
         width: 24px;
     }
+
+    .arrow-up {
+        right: 24px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -116,9 +120,12 @@
 
     .purple-shadow {
         position: absolute;
-        bottom: -250px;
         z-index: -9999;
         height: 950px;
+    }
+
+    .arrow-up {
+        right: 64px;
     }
 }
 
@@ -132,5 +139,9 @@
     .contact-me-p-wrapper > :nth-child(2),
     .contact-me-p-wrapper > :nth-child(4) {
         padding-inline: 100px 0px;
+    }
+
+    .arrow-up {
+        right: 100px;
     }
 }

@@ -35,3 +35,23 @@ footer {
 .k {
     color: #9747FF;
 }
+
+@media screen and (min-width: 900px) {
+    .footer-content-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        padding-inline: 64px;
+
+        >span {
+            position: absolute;
+            bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-content-wrapper {
+        padding-inline: 100px;
+}
+}

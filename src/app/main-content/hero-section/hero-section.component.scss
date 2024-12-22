@@ -57,7 +57,7 @@ h2 {
 }
 
 button {
-    padding: clamp(8px, 2vmin, 16px) clamp(15px, 4vmin, 30px) clamp(8px, 2vmin, 16px) clamp(15px, 4vmin, 30px);
+    padding: 1em 2em;
     background-color: #70E61C;
     color: white;
     font-size: clamp(16px, 2vmin, 24px);
@@ -72,7 +72,7 @@ button {
 
 .reference-icons-and-green-line-content-wrapper {
     position: absolute;
-    bottom: 1.5em;
+    bottom: 2em;
     left: 0;
     display: flex;
     align-items: center;
@@ -133,7 +133,7 @@ button {
     .scroll-down-content-wrapper {
         position: absolute;
         right: 24px;
-        bottom: 1.5em;
+        bottom: 2em;
         display: flex;
         flex-direction: column;
         align-items: center;

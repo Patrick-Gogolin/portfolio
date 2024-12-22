@@ -97,23 +97,34 @@
 .get-in-touch-button {
     display: block;
     margin: 0 auto;
-    font-size: 16px;
-    padding: 15px 30px;
+    font-size: clamp(16px, 2vmin, 24px);
+    padding: 1em 2em;
     color: white;
     background-color: #70E61C;
     border-radius: 10px;
+    border: none;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
-    &:hover {
-        background-color:#9747FF;
+@media screen and (min-width:660px) {
+    .skills-section-small-viewport-wrapper {
+        display: none;
+    }
+}
+
+/* Hover-Effekt auf Geräten mit Maus */
+@media (hover: hover) and (pointer: fine) {
+    button:hover {
+        background-color: #9747FF;
         transform: scale(1.05);
     }
 }
 
-@media screen and (min-width:660px) {
-
-    .skills-section-small-viewport-wrapper {
-        display: none;
+/* Keine Hover-Effekte auf Touch-Geräten */
+@media (hover: none), (pointer: coarse) {
+    button:hover {
+        background-color: #70E61C;
+        transform: none;
     }
 }

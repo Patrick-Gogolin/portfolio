@@ -1,0 +1,56 @@
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(20, 29, 47, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.burger-menu.slided-in {
+    animation: slideIn 250ms ease forwards;
+}
+
+.burger-menu.slided-out {
+    animation: slideOut 250ms ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.anchor-tags-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 42px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

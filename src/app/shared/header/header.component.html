@@ -8,6 +8,7 @@
             <a href="#">Skills</a>
             <a href="#">Portfolio</a>
         </nav>
-        <img class="burger-menu-img" src="./assets/img/burger-menu.svg" alt="burger-menu">
+        <img (click)="toggleBurgerMenu()" class="burger-menu-img" [src]="images[currentImageIndex]" alt="burger-menu">
     </div>
 </header>
+<app-burger-menu [isActive]="burgerMenuOpen" [initialized]="initialized"></app-burger-menu>
