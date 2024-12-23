@@ -1,14 +1,14 @@
 header {
-    background-color: #141D2F;
-    position: sticky;
-    z-index: 10000;
-    top: 0;
+  background-color: #141D2F;
+  position: sticky;
+  z-index: 10000;
+  top: 0;
 }
 
 .logo-wrapper {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .i-dot {
@@ -20,41 +20,41 @@ header {
 }
 
 .header-content-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 37px 100px 37px 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 100px 37px 100px;
 }
 
 .menu-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 29px;
-    font-size: 23px;
-    font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  font-size: 23px;
+  font-weight: 400;
 
-    >a {
-        text-decoration: none;
-        color: white;
+  >a {
+    text-decoration: none;
+    color: white;
 
-        &:hover {
-            color: #70E61C;
-        }
+    &:hover {
+      color: #70E61C;
     }
+  }
 }
 
 .burger-menu-img {
-    width: 30px;
-    height: 30px;
-    display: none;
+  width: 30px;
+  height: 30px;
+  display: none;
 }
 
 @media screen and (max-width:1200px) {
   .header-content-wrapper {
     padding: 37px 64px 37px 64px;
-}
+  }
 }
 
 @media screen and (max-width:900px) {
@@ -64,21 +64,29 @@ header {
 
   .header-content-wrapper {
     padding: 37px 24px 37px 24px;
-}
+  }
+
+  .logo-wrapper {
+    font-size: 48px;
+  }
 }
 
 @media screen and (max-width:660px) {
-    .menu-wrapper {
-      display: none;
-    }
-
-    .burger-menu-img {
-        display: block;
-    }
+  .menu-wrapper {
+    display: none;
   }
 
-  @media screen and (max-width:380px) {
-  .header-content-wrapper{
+  .burger-menu-img {
+    display: block;
+  }
+
+  .logo-wrapper {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .header-content-wrapper {
     padding: 37px 8px 37px 8px;
   }
 }

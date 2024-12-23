@@ -9,5 +9,5 @@ import { ContactformComponent } from './contactform/contactform.component';
   styleUrl: './contact-section.component.scss'
 })
 export class ContactSectionComponent {
-
+  
 }

@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrl: './about-me-large-viewports.component.scss'
 })
 export class AboutMeLargeViewportsComponent {
-
 }

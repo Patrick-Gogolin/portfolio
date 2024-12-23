@@ -10,7 +10,8 @@ import { HostListener } from '@angular/core';
   styleUrl: './skill-section-large-viewports.component.scss'
 })
 export class SkillSectionLargeViewportsComponent {
-  hover : boolean = false;
+  
+  hover: boolean = false;
   isTouched: boolean = false;
 
   icons: string[] = ['html.svg', 'css.svg', 'javascript.svg', 'typescript.svg', 'angular.svg', 'firebase.svg',
@@ -18,7 +19,7 @@ export class SkillSectionLargeViewportsComponent {
 
   skillIcons(array: string[], index: number) {
     const lastElement = index === array.length - 1;
-    return {'skill-icons-not-moving': lastElement, 'skill-icons-moving': !lastElement}
+    return { 'skill-icons-not-moving': lastElement, 'skill-icons-moving': !lastElement }
   }
 
   startTouch() {
@@ -39,7 +40,7 @@ export class SkillSectionLargeViewportsComponent {
     const lastIcon = this.icons[this.icons.length - 1];
     console.log(target.src);
     console.log(lastIcon);
-  
+
     if (target instanceof HTMLImageElement) {
       if (target.src.includes(lastIcon)) {
         event.preventDefault();

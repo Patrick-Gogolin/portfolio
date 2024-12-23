@@ -12,6 +12,7 @@ import { SingleProject } from  '../../shared/interfaces/single-project';
 })
 export class PortfolioSectionComponent {
 
+
   activeProjectIndex: number | null = null;
   buttonActive: boolean = false;
 
