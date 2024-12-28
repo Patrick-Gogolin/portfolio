@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-
 @Component({
-  selector: 'app-footer',
+  selector: 'app-imprint',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  templateUrl: './imprint.component.html',
+  styleUrl: './imprint.component.scss'
 })
-export class FooterComponent {
+export class ImprintComponent {
 
 }

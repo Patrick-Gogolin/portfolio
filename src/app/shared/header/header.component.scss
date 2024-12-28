@@ -8,7 +8,7 @@ header {
 .logo-wrapper {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 32px;
 }
 
 .i-dot {
@@ -65,10 +65,6 @@ header {
   .header-content-wrapper {
     padding: 37px 24px 37px 24px;
   }
-
-  .logo-wrapper {
-    font-size: 48px;
-  }
 }
 
 @media screen and (max-width:660px) {
@@ -78,10 +74,6 @@ header {
 
   .burger-menu-img {
     display: block;
-  }
-
-  .logo-wrapper {
-    font-size: 30px;
   }
 }
 

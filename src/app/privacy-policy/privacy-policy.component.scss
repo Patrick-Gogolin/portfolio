@@ -1,0 +1,60 @@
+.privacy-policy-main-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-inline: 8px;
+}
+
+.arrow-back {
+    transform: rotate(270deg);
+    padding-block: 1em;
+}
+
+h1 {
+    font-size: clamp(24px, 7vmin, 48px);
+}
+
+h2 {
+    font-size: clamp(20px, 5vmin, 40px);
+}
+
+h3 {
+    font-size: clamp(16px, 5vmin, 32px);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    padding-inline: 16px;
+}
+
+.introduction-wrapper,
+.content-wrapper,
+.responsive-person-wrapper,
+.wrapper {
+    padding-block: 24px;
+}
+
+@media screen and (min-width: 660px) {
+    .privacy-policy-main-wrapper {
+        padding-inline: 24px;
+    }
+
+    ul {
+        padding-inline: 32px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .privacy-policy-main-wrapper {
+        padding-inline: 64px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .privacy-policy-main-wrapper {
+        padding-inline: 100px;
+    }
+}

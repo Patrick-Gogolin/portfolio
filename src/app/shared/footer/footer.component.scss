@@ -36,6 +36,12 @@ footer {
     color: #9747FF;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 900px) {
     .footer-content-wrapper {
         flex-direction: row;
