@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 html{
@@ -18,11 +17,11 @@ body {
     flex-direction: column;
 }
 
-/* app-root {
+app-root {
   display: flex;
   flex-direction: column;
   flex: 1;
-} */
+}
 
 app-footer {
   margin-top: auto;
