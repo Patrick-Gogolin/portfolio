@@ -171,4 +171,9 @@ button {
         background-color: #70E61C;
         transform: none;
     }
+
+    .reference-icons-wrapper img:hover {
+        transform: none;
+        cursor: default;
+    }
 }

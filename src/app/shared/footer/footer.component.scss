@@ -17,9 +17,20 @@ footer {
     }
 }
 
-.icons-wrapper {
+.reference-icons-wrapper {
     display: flex;
     gap: 42px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        transition: transform 250ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.33);
+            cursor: pointer;
+        }
+    }
 }
 
 .logo-wrapper {
@@ -59,5 +70,12 @@ a {
 @media screen and (min-width: 1200px) {
     .footer-content-wrapper {
         padding-inline: 100px;
+    }
 }
+
+@media (hover: none) {
+    .reference-icons-wrapper img:hover {
+        transform: none;
+        cursor: default;
+    }
 }
