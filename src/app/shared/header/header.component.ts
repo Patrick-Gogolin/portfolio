@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [BurgerMenuComponent, RouterLink],
+  imports: [BurgerMenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
