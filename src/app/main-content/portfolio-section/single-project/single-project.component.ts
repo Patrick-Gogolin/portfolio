@@ -1,11 +1,12 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SingleProject } from '../../../shared/interfaces/single-project';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-single-project',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss'
 })
@@ -44,5 +45,9 @@ export class SingleProjectComponent {
 
   openProjectOverview() {
     this.activate.emit();
+  }
+
+  getProjectDescriptionKey(projectName: string | undefined): string {
+    return `portfolio.projects.${projectName ?? 'default'}.description`;
   }
 }

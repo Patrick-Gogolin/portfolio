@@ -3,11 +3,13 @@
         <div class="logo-wrapper">
             Patr<span class="i-dot">i</span>c<span class="k">k</span>
         </div>
+        <button (click)="switchLanguage('en')">English</button>
+        <button (click)="switchLanguage('de')">Deutsch</button>
         <nav class="menu-wrapper">
-            <a class="about-me-anchor" href="#about-me">About me</a>
-            <a class="skills-anchor" href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#about-me">{{"header.about-me" | translate}}</a>
+            <a href="#skills">{{"header.skills" | translate}}</a>
+            <a href="#portfolio">{{"header.portfolio" | translate}}</a>
+            <a href="#contact">{{"header.contact" | translate}}</a>
         </nav>
         <img (click)="toggleBurgerMenu()" class="burger-menu-img" [src]="images[currentImageIndex]" alt="burger-menu">
     </div>

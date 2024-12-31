@@ -8,7 +8,7 @@
     <div (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)" (touchend)="onTouchEnd()"
         class="overlayer">
         <p class="headline">{{ project?.projectName }}</p>
-        <p class="project-description">{{ project?.projectDescription}}</p>
+        <p class="project-description">{{ getProjectDescriptionKey(project?.projectName)  | translate }}</p>
         <div class="skill-wrapper">
             @for(skill of project?.projectSkills; track i; let i = $index ) {
             <span class="skill">{{ skill }}</span>

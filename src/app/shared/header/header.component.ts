@@ -1,14 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [BurgerMenuComponent],
+  imports: [BurgerMenuComponent, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  private translate = inject(TranslateService);
+
+  ngOnInit() {
+    // Standardmäßig eine Sprache setzen
+    this.translate.setDefaultLang('en');
+  }
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+  }
+
+
   burgerMenuOpen: boolean = false;
   initialized: boolean = false;
   imageInterval: ReturnType<typeof setInterval> | null = null;

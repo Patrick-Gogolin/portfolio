@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SingleProjectComponent } from './single-project/single-project.component';
 import { SingleProject } from  '../../shared/interfaces/single-project';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio-section',
   standalone: true,
-  imports: [SingleProjectComponent, CommonModule],
+  imports: [SingleProjectComponent, CommonModule, TranslatePipe],
   templateUrl: './portfolio-section.component.html',
   styleUrl: './portfolio-section.component.scss'
 })

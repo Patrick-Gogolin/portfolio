@@ -1,0 +1,82 @@
+{
+    "header": {
+        "about-me": "Über mich",
+        "skills": "Fähigkeiten",
+        "portfolio": "Portfolio",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "FRONTEND ENTWICKLER",
+        "me": "Ich bin",
+        "lets-talk": "Lass uns reden",
+        "scroll-down": "Scroll weiter"
+    },
+    "about": {
+        "headline": "Über mich",
+        "description": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe von Hamburg. Motiviert von den grenzenlosen Möglichkeiten in der IT, begeistert es mich, visuell ansprechende und intuitive Websites und Anwendungen zu gestalten.",
+        "location": "Flexibel in Bezug auf Arbeitsumgebungen, kann ich sowohl vor Ort in Hamburg, als auch remote, effektiv arbeiten.",
+        "improvement": "Ich bin stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+        "motivation": "Beim programmieren geht es für mich nicht nur um das Schreiben von Code, sondern um eine kreative Art, Probleme zu lösen. Ich lege großen Wert darauf, komplexe technische Herausforderungen in klare und benutzerfreundliche Lösungen zu übersetzen. So unterstütze ich Sie dabei, Ihre Ziele zu verwirklichen und Ihre Visionen Realität werden zu lassen."
+    },
+    "skills": {
+        "headline": "Fähigkeiten",
+        "description-small-viewport": "Ich habe Erfahrung in der Umsetzung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+        "description-large-viewport": "Meine Reise umfasst die Arbeit an vielfältigen Projekten, bei denen ich eine Reihe von Frontend-Technologien und Konzepten eingesetzt habe. Ich bin offen dafür, neue Technologien und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung stets einen Schritt voraus zu sein.",
+        "looking": "Auf der Suche nach einer",
+        "another-skill": "anderen Fähigkeit?",
+        "contact-me": "Kontaktieren Sie mich gerne. Ich bin immer offen für das Erlernen neuer Technologien.",
+        "get-in-touch": "In Kontakt treten"
+    },
+    "portfolio": {
+        "headline": "Entdecken Sie eine Auswahl meiner Projekte und interagieren Sie mit ihnen um sie live zu erleben",
+        "projects": {
+            "EL POLLO LOCO": {
+                "name": "EL POLLO LOCO",
+                "description": "Spring-, Lauf- und Wurfspiel basierend auf dem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
+            },
+            "JOIN": {
+                "name": "JOIN",
+                "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu."
+            },
+            "POKEDEX": {
+                "name": "POKEDEX",
+                "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+            }
+        }
+    },
+    "testimonial": {
+        "testimonial-one": "Patrick hat das Team mit seiner klaren Kommunikation und seiner hervorragenden Organisation zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen",
+        "testimonial-two": "Paddy war ein top Team Kollege in der DA. Sein positives Engagement und Verantwortungsbewusstsein leisteten einen enormen Beitrag für das Erreichen unserer Ziele.",
+        "testimonial-three": "Es war eine große Freude, mit Patrick zu arbeiten. Er weiß, wie man Teammitglieder motiviert und anspornt, das bestmögliche Arbeitsergebnis zu präsentieren, und bringt immer neue Ideen in Brainstormings ein. Was das Wohlbefinden der Gruppenmitglieder betrifft, war er immer präsent und ansprechbar, um zuzuhören und anderen zu helfen, mit einem großartigen Sinn für Humor."
+    },
+    "contact": {
+        "headline": "Kontakt",
+        "subheadline": "Ein Problem zu lösen?",
+        "contact-me": "Kontaktieren Sie mich über das Kontaktformular. Ich würde mich freuen meinen Beitrag für die Umsetzung ihrer Projekte und Ideen leisten zu können.",
+        "need-a-developer": "Brauchen Sie einen Frontend Entwickler?",
+        "call-to-contact": "Kontaktieren Sie mich!"
+    },
+    "contactform": {
+        "name-input": "Ihr Name",
+        "email": "Ihre Email",
+        "message": "Ihre Nachricht",
+        "i'-ve-read-the": "Ich habe die",
+        "privacy-policy": "Datenschutzerklärung",
+        "confirm-policy": "gelesen und stimme der Verarbeitung meiner Daten wie dort beschrieben zu.",
+        "send-message": "Nachricht senden",
+        "name-required": "Die Eingabe eines Namens ist Pflicht",
+        "email-required": "Die Eingabe einer validen Email ist Pflicht",
+        "message-required": "Die Eingabe einer Nachricht ist Pflicht",
+        "accept-privacy-policy": "Bitte akzeptieren Sie die Datenschutzerklärung"
+    },
+    "footer": {
+        "legal-notice": "Impressum"
+    },
+    "legal-notice": {
+        "imprint": "Impressum",
+        "service-provider": "Diensteanbieter",
+        "contact": "Kontaktmöglichkeiten",
+        "email": "E-Mail-Adresse",
+        "created-with": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke"
+    }
+}

@@ -1,10 +1,10 @@
 <div data-aos="fade-up" class="skills-section-small-viewport-wrapper">
     <div class="skills-section-small-viewport-headline-wrapper">
-        <span>Skills</span>
+        <span>{{"skills.headline" | translate}}</span>
         <div class="blue-line"></div>
     </div>
     <div class="skills-section-small-viewport-introduction-wrapper">
-        <p>I have gained experience in building projects with various frontend technologies and concepts.</p>
+        <p>{{"skills.description-small-viewport" | translate}}</p>
     </div>
     <div class="skills-section-small-viewport-icons-wrapper" [class]="{'touched': isTouched}">
         @for(icon of icons; track icon; let i= $index) {
@@ -18,9 +18,9 @@
     </div>
     <div class="skills-section-small-viewport-looking-for-another-skill-wrapper">
         <div class="looking-for-another-skill-span-wrapper">
-            <span>Looking for </span><span>another skill?</span>
+            <span>{{"skills.looking" | translate}}</span><span>{{"skills.another-skill" | translate}}</span>
         </div>
-        <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
-        <button class="get-in-touch-button">Get in touch</button>
+        <p>{{"skills.contact-me" | translate}}</p>
+        <button class="get-in-touch-button">{{"skills.get-in-touch" | translate}}</button>
     </div>
 </div>

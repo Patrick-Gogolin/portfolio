@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-burger-menu',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './burger-menu.component.html',
   styleUrl: './burger-menu.component.scss'
 })
