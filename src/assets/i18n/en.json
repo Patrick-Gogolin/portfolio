@@ -135,12 +135,12 @@
         "international-data-transfer-text-1": "Data processing in third countries: If we process data in a third country (i.e. outside the European Union). union (EU), the European Economic Area (EEA)) or the processing within the framework of the Claim third party services or the disclosure or transfer of data to other persons, entities or company, this only takes place in accordance with the legal requirements. Unless that Data protection level in the third country has been recognized by means of an adequacy decision (Article 45 GDPR), This serves as the basis for data transfer. Furthermore, data transfers only take place if: Data protection level is otherwise secured, in particular through standard contractual clauses (Art. 46 Para. 2 lit. c) GDPR), express consent or in the case of contractual or legally required transmission (Art. 49 Paragraph 1 GDPR). We will also share with you the basics of third country transfers for each individual providers from third countries, with the adequacy decisions taking priority as the basis. Information on third country transfers and existing adequacy decisions can be obtained from this Offer of information from the EU Commission:",
         "international-data-transfer-text-2": "As part of the so-called “Data Privacy Framework” (DPF), the EU Commission has set the data protection level also for certain companies from the USA as part of the adequacy decision of July 10, 2023 recognized. You can find the list of certified companies as well as further information about the DPF here US Department of Commerce website at ",
         "international-data-transfer-text-3": "(in English). As part of the data protection information, we will inform you which service providers we use are certified under the Data Privacy Framework.",
-        "data-storage-and-deletion-text-1":  "We delete personal data that we process in accordance with the law as soon as possible underlying consents are revoked or there are no further legal basis for the processing. This applies to cases in which the original purpose of processing no longer applies or Data is no longer needed. Exceptions to this rule exist if legal obligations or special interests require longer storage or archiving of the data.",
-        "data-storage-and-deletion-text-2":  "In particular, data that must be retained for commercial or tax reasons or whose Storage is necessary for legal prosecution or to protect the rights of other natural or legal Persons should be archived accordingly.",
-        "data-storage-and-deletion-text-3":  "Our data protection notice contains additional information about the retention and deletion of data apply specifically to certain processing processes.",
-        "data-storage-and-deletion-text-4":  "If there is multiple information about the retention period or deletion period for a date, the longest period is always the one decisive.",
-        "data-storage-and-deletion-text-5":  "If a period does not expressly begin on a specific date and is at least one year, so starts automatically at the end of the calendar year in which the event triggering the deadline occurred. In the case ongoing contractual relationships under which data is stored is the event that triggers the deadline the time when the termination or other termination of the legal relationship takes effect.",
-        "data-storage-and-deletion-text-6":  "Data that is no longer used for the originally intended purpose, but due to legal requirements or if it is stored for other reasons, we process it exclusively for the reasons that justify its storage justify.",
+        "data-storage-and-deletion-text-1": "We delete personal data that we process in accordance with the law as soon as possible underlying consents are revoked or there are no further legal basis for the processing. This applies to cases in which the original purpose of processing no longer applies or Data is no longer needed. Exceptions to this rule exist if legal obligations or special interests require longer storage or archiving of the data.",
+        "data-storage-and-deletion-text-2": "In particular, data that must be retained for commercial or tax reasons or whose Storage is necessary for legal prosecution or to protect the rights of other natural or legal Persons should be archived accordingly.",
+        "data-storage-and-deletion-text-3": "Our data protection notice contains additional information about the retention and deletion of data apply specifically to certain processing processes.",
+        "data-storage-and-deletion-text-4": "If there is multiple information about the retention period or deletion period for a date, the longest period is always the one decisive.",
+        "data-storage-and-deletion-text-5": "If a period does not expressly begin on a specific date and is at least one year, so starts automatically at the end of the calendar year in which the event triggering the deadline occurred. In the case ongoing contractual relationships under which data is stored is the event that triggers the deadline the time when the termination or other termination of the legal relationship takes effect.",
+        "data-storage-and-deletion-text-6": "Data that is no longer used for the originally intended purpose, but due to legal requirements or if it is stored for other reasons, we process it exclusively for the reasons that justify its storage justify.",
         "data-storage-and-deletion-text-7": "Further information on processing processes, procedures and services:",
         "data-storage-and-deletion-text-8": "Retention and deletion of data:",
         "data-storage-and-deletion-text-9": "The following general deadlines apply Storage and archiving according to German law:",
@@ -150,7 +150,7 @@
         "rights-text-1": "Rights of data subjects under the GDPR: As data subjects, you have various rights under the GDPR to, which result in particular from Articles 15 to 21 GDPR:",
         "rights-text-2": "Right to object: You have the right to object for reasons relating to your particular situation at any time, object to the processing of personal data concerning you based on from Art. 6 Para. 1 lit. e or f GDPR to lodge an objection; this also applies to one on this Regulation-based profiling. If your personal data is processed, around to conduct direct advertising, you have the right to object to the processing of your data at any time she to submit relevant personal data for the purpose of such advertising; this also applies to the profiling to the extent that it is related to such direct advertising.",
         "rights-text-3": "Right to withdraw consent:",
-        "rights-text-4": "You have the right to consent given any time to revoke." ,
+        "rights-text-4": "You have the right to consent given any time to revoke.",
         "rights-text-5": "Right to information",
         "rights-text-6": "You have the right to request confirmation as to whether concerned data is processed and to information about this data as well as further information and a copy of the data in accordance with legal requirements.",
         "rights-text-7": "Right to rectification:",
@@ -214,21 +214,6 @@
         "plug-in-text-16": "Provision of font files for the purpose of a user-friendly presentation of our online offering;",
         "plug-in-text-17": "Service provider:",
         "plug-in-text-18": "The Google Fonts are hosted on our server, no data is transmitted to Google;",
-        "plug-in-text-19": "Created with the free Data Protection Generator.de by Dr. Thomas Schwenke"  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        "plug-in-text-19": "Created with the free Data Protection Generator.de by Dr. Thomas Schwenke"
     }
 }

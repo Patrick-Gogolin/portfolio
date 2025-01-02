@@ -97,7 +97,7 @@
         "webhosting": "Bereitstellung des Onlineangebots und Webhosting",
         "contact": "Kontakt- und Anfrageverwaltung",
         "plug-in": "Plug-ins und eingebettete Funktionen sowie Inhalte",
-        "process-overview-introduction":"Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
+        "process-overview-introduction": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
         "type-of-data-processed": "Verarbeitete Daten",
         "type-of-processed-data-1": "Bestandsdaten",
         "type-of-processed-data-2": "Kontaktdaten",
@@ -136,11 +136,11 @@
         "international-data-transfer-text-2": "Im Rahmen des sogenannten 'Data Privacy Framework' (DPF) hat die EU-Kommission das Datenschutzniveau ebenfalls für bestimmte Unternehmen aus den USA im Rahmen der Angemessenheitsbeschlusses vom 10.07.2023 als sicher anerkannt. Die Liste der zertifizierten Unternehmen als auch weitere Informationen zu dem DPF können Sie der Website des Handelsministeriums der USA unter ",
         "international-data-transfer-text-3": "(in Englisch) entnehmen. Wir informieren Sie im Rahmen der Datenschutzhinweise, welche von uns eingesetzten Diensteanbieter unter dem Data Privacy Framework zertifiziert sind.",
         "data-storage-and-deletion-text-1": "Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in denen der ursprüngliche Verarbeitungszweck entfällt oder die Daten nicht mehr benötigt werden. Ausnahmen von dieser Regelung bestehen, wenn gesetzliche Pflichten oder besondere Interessen eine längere Aufbewahrung oder Archivierung der Daten erfordern.",
-        "data-storage-and-deletion-text-2":  "Insbesondere müssen Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt werden müssen oder deren Speicherung notwendig ist zur Rechtsverfolgung oder zum Schutz der Rechte anderer natürlicher oder juristischer Personen, entsprechend archiviert werden.",
-        "data-storage-asnd-deletion-text-3":  "Unsere Datenschutzhinweise enthalten zusätzliche Informationen zur Aufbewahrung und Löschung von Daten, die speziell für bestimmte Verarbeitungsprozesse gelten.",
-        "data-storage-and-deletion-text-4":  "Bei mehreren Angaben zur Aufbewahrungsdauer oder Löschungsfristen eines Datums, ist stets die längste Frist maßgeblich.",
-        "data-storage-and-deletion-text-5":  "Beginnt eine Frist nicht ausdrücklich zu einem bestimmten Datum und beträgt sie mindestens ein Jahr, so startet sie automatisch am Ende des Kalenderjahres, in dem das fristauslösende Ereignis eingetreten ist. Im Fall laufender Vertragsverhältnisse, in deren Rahmen Daten gespeichert werden, ist das fristauslösende Ereignis der Zeitpunkt des Wirksamwerdens der Kündigung oder sonstige Beendigung des Rechtsverhältnisses.",
-        "data-storage-and-deletion-text-6":  "Daten, die nicht mehr für den ursprünglich vorgesehenen Zweck, sondern aufgrund gesetzlicher Vorgaben oderanderer Gründe aufbewahrt werden, verarbeiten wir ausschließlich zu den Gründen, die ihre Aufbewahrung rechtfertigen.",
+        "data-storage-and-deletion-text-2": "Insbesondere müssen Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt werden müssen oder deren Speicherung notwendig ist zur Rechtsverfolgung oder zum Schutz der Rechte anderer natürlicher oder juristischer Personen, entsprechend archiviert werden.",
+        "data-storage-asnd-deletion-text-3": "Unsere Datenschutzhinweise enthalten zusätzliche Informationen zur Aufbewahrung und Löschung von Daten, die speziell für bestimmte Verarbeitungsprozesse gelten.",
+        "data-storage-and-deletion-text-4": "Bei mehreren Angaben zur Aufbewahrungsdauer oder Löschungsfristen eines Datums, ist stets die längste Frist maßgeblich.",
+        "data-storage-and-deletion-text-5": "Beginnt eine Frist nicht ausdrücklich zu einem bestimmten Datum und beträgt sie mindestens ein Jahr, so startet sie automatisch am Ende des Kalenderjahres, in dem das fristauslösende Ereignis eingetreten ist. Im Fall laufender Vertragsverhältnisse, in deren Rahmen Daten gespeichert werden, ist das fristauslösende Ereignis der Zeitpunkt des Wirksamwerdens der Kündigung oder sonstige Beendigung des Rechtsverhältnisses.",
+        "data-storage-and-deletion-text-6": "Daten, die nicht mehr für den ursprünglich vorgesehenen Zweck, sondern aufgrund gesetzlicher Vorgaben oderanderer Gründe aufbewahrt werden, verarbeiten wir ausschließlich zu den Gründen, die ihre Aufbewahrung rechtfertigen.",
         "data-storage-and-deletion-text-7": "Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:",
         "data-storage-and-deletion-text-8": "Aufbewahrung und Löschung von Daten:",
         "data-storage-and-deletion-text-9": "Die folgenden allgemeinen Fristen gelten für die Aufbewahrung und Archivierung nach deutschem Recht:",
@@ -214,6 +214,6 @@
         "plug-in-text-16": "Bereitstellung von Schriftarten-Dateien zwecks einer nutzerfreundlichen Darstellung unseres Onlineangebotes;",
         "plug-in-text-17": "Dienstanbieter:",
         "plug-in-text-18": "Die Google Fonts werden auf unserem Server gehostet, es werden keine Daten an Google übermittelt;",
-        "plug-in-text-19": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke"        
-}
+        "plug-in-text-19": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke"
+    }
 }
