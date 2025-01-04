@@ -13,6 +13,12 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
   private translate = inject(TranslateService);
   currentLanguage: string = 'en';
+  burgerMenuOpen: boolean = false;
+  initialized: boolean = false;
+  imageInterval: ReturnType<typeof setInterval> | null = null;
+  currentImageIndex: number = 0;
+
+  images: string[] = ['./assets/img/burger-menu/burger-menu.svg', './assets/img/burger-menu/burger-menu-step-two.svg', './assets/img/burger-menu/close-burger-menu-step-one.svg', './assets/img/burger-menu/close-burger-menu-step-two.svg'];
 
   ngOnInit() {
     this.translate.setDefaultLang('en');
@@ -22,19 +28,10 @@ export class HeaderComponent implements OnInit {
     this.translate.use(lang);
   }
 
-
   toggleLanguage() {
     this.currentLanguage = this.currentLanguage === 'en' ? 'de' : 'en';
     this.switchLanguage(this.currentLanguage);
   }
-
-
-  burgerMenuOpen: boolean = false;
-  initialized: boolean = false;
-  imageInterval: ReturnType<typeof setInterval> | null = null;
-  currentImageIndex: number = 0;
-
-  images: string[] = ['./assets/img/burger-menu/burger-menu.svg', './assets/img/burger-menu/burger-menu-step-two.svg', './assets/img/burger-menu/close-burger-menu-step-one.svg', './assets/img/burger-menu/close-burger-menu-step-two.svg'];
 
   toggleBurgerMenu() {
     this.burgerMenuOpen = !this.burgerMenuOpen;
@@ -68,5 +65,15 @@ export class HeaderComponent implements OnInit {
     else {
       this.burgerMenuIconCloseAnimation();
     }
+  }
+
+  animateSlider(){
+    if (this.currentLanguage === "en") {
+      return 'animate-to-right'
+    }
+    if (this.currentLanguage === 'de') {
+      return 'animate-to-left'
+    }
+    return 'animate-to-right';
   }
 }

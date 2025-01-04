@@ -58,7 +58,6 @@ header {
   animation: slide-reverse 0.3s ease forwards;
 }
 
-
 @keyframes slide {
   0% {
     right: auto;
@@ -189,5 +188,24 @@ a:hover::after {
 @media screen and (max-width:380px) {
   .header-content-wrapper {
     padding: 37px 8px 37px 8px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: #70E61C;
+  }
+
+  a:hover::after {
+    background-color: #9747FF;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  a:hover {
+      color: white;
+  }
+  a:hover::after {
+    background-color: transparent;
   }
 }

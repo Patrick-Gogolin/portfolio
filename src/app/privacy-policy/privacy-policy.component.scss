@@ -1,7 +1,3 @@
-:host {
-    scroll-behavior: auto !important;
-  }
-  
 .privacy-policy-main-wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -11,6 +7,7 @@
 .arrow-back {
     transform: rotate(270deg);
     padding-block: 1em;
+    cursor: pointer;
 }
 
 h1 {

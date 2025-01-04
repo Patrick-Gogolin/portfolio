@@ -25,27 +25,20 @@ export class SkillSectionLargeViewportsComponent {
 
   startTouch() {
     this.isTouched = true;
-    console.log(this.isTouched);
-    console.log("hover", this.hover);
   }
 
   endOfTouch() {
     this.isTouched = false;
-    console.log(this.isTouched);
-    console.log("hover", this.hover);
   }
 
   @HostListener('touchstart', ['$event'])
   onTouchStart(event: TouchEvent): void {
     const target = event.target as HTMLImageElement;
     const lastIcon = this.icons[this.icons.length - 1];
-    console.log(target.src);
-    console.log(lastIcon);
 
     if (target instanceof HTMLImageElement) {
       if (target.src.includes(lastIcon)) {
         event.preventDefault();
-        console.log('Touch event started, context menu is disabled for the last element');
       }
     }
   }

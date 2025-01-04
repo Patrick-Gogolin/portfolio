@@ -5,7 +5,7 @@
             <div class="language-toggle-slider-wrapper">
                 <div class="language-toggle" (click)="toggleLanguage()">
                     <span>DE</span>
-                    <div [class]="{'animate-to-left': currentLanguage === 'de', 'animate-to-right': currentLanguage === 'en'}"
+                    <div [class]="animateSlider()"
                         class="slider active-language"></div>
                     <span>ENG</span>
                 </div>

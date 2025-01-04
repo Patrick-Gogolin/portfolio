@@ -29,6 +29,7 @@ a {
 .arrow-back {
     transform: rotate(270deg);
     padding-block: 1em;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 660px) {
