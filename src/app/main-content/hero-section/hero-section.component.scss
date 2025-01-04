@@ -113,10 +113,6 @@ button {
     animation: float 1000ms ease-in-out infinite;
 }
 
-//.arrow-down-img {
-    //animation: float 1000ms ease-in-out infinite;
-//}
-
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -157,7 +153,6 @@ button {
     }
 }
 
-/* Hover-Effekt auf Geräten mit Maus */
 @media (hover: hover) and (pointer: fine) {
     button:hover {
         background-color: #9747FF;
@@ -165,7 +160,6 @@ button {
     }
 }
 
-/* Keine Hover-Effekte auf Touch-Geräten */
 @media (hover: none), (pointer: coarse) {
     button:hover {
         background-color: #70E61C;

@@ -28,13 +28,6 @@ export class TestimonialSectionComponent {
       role: "Team Partner",
       testimonial: "testimonial-two"
     },
-    {
-      img: "./assets/img/testimonials/testimonial_one.png",
-      firstCharacterOfFirstName: "G.",
-      lastName: "Gans",
-      role: "Team Partner",
-      testimonial: "testimonial-three"
-    },
   ]
 
   nextTestimonial() {

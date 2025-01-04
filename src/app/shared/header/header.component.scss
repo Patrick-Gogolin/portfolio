@@ -8,6 +8,101 @@ header {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.language-toggle-slider-wrapper {
+  margin-left: 18px;
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 40px;
+  background-color: #141D2F;
+  border-radius: 20px;
+  border: solid 2px #9747FF;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.language-toggle span {
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+ .slider {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 40%;
+  height: 90%;
+  background-color: #70E61C;
+  border-radius: 50%;
+}
+
+.slider.animate-to-right {
+  animation: slide 0.3s ease forwards;
+}
+
+.slider.animate-to-left {
+  animation: slide-reverse 0.3s ease forwards;
+}
+
+
+@keyframes slide {
+  0% {
+    right: auto;
+    left: 10%;
+  }
+  25% {
+    right: auto;
+    left: 35%;
+  }
+  50% {
+    right: auto;
+    left: 50%;
+  }
+  75% {
+    right: auto;
+    left: 55%;
+  }
+  100% {
+    right: 5%;
+    left: auto;
+  }
+}
+
+@keyframes slide-reverse {
+  0% {
+    left: auto;
+    right: 10%;
+  }
+  25% {
+    left: auto;
+    right: 35%;
+  }
+  50% {
+    left: auto;
+    right: 50%;
+  }
+  75% {
+    left: auto;
+    right: 55%;
+  }
+  100% {
+    left: 5%;
+    right: auto;
+  }
 }
 
 .i-dot {
@@ -30,8 +125,8 @@ header {
 .menu-wrapper {
   display: flex;
   align-items: center;
-  gap: 29px;
-  font-size: 23px;
+  gap: 26px;
+  font-size: 24px;
   font-weight: 400;
 }
 

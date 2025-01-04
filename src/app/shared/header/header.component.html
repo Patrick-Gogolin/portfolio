@@ -2,9 +2,16 @@
     <div class="header-content-wrapper">
         <div class="logo-wrapper">
             Patr<span class="i-dot">i</span>c<span class="k">k</span>
+            <div class="language-toggle-slider-wrapper">
+                <div class="language-toggle" (click)="toggleLanguage()">
+                    <span>DE</span>
+                    <div [class]="{'animate-to-left': currentLanguage === 'de', 'animate-to-right': currentLanguage === 'en'}"
+                        class="slider active-language"></div>
+                    <span>ENG</span>
+                </div>
+            </div>
         </div>
-        <button (click)="switchLanguage('en')">English</button>
-        <button (click)="switchLanguage('de')">Deutsch</button>
+      
         <nav class="menu-wrapper">
             <a href="#about-me">{{"header.about-me" | translate}}</a>
             <a href="#skills">{{"header.skills" | translate}}</a>

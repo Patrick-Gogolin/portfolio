@@ -12,14 +12,20 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
   private translate = inject(TranslateService);
+  currentLanguage: string = 'en';
 
   ngOnInit() {
-    // Standardmäßig eine Sprache setzen
     this.translate.setDefaultLang('en');
   }
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
+  }
+
+
+  toggleLanguage() {
+    this.currentLanguage = this.currentLanguage === 'en' ? 'de' : 'en';
+    this.switchLanguage(this.currentLanguage);
   }
 
 
