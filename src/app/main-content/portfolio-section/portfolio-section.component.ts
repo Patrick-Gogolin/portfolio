@@ -35,7 +35,7 @@ export class PortfolioSectionComponent {
       projectSkills: ['HTML', 'CSS', 'JAVASCRIPT'],
       projectImage: './assets/img/mockups/pollo-loco-mockup.svg',
       projectDescription: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      projectLink: "http://polloloco.patrick-gogolin.de/",
+      projectLink: "https://el-pollo-loco.patrick-gogolin.de/",
       githubLink: "https://github.com/Patrick-Gogolin/Pollo-Loco",
     },
     {
@@ -43,7 +43,7 @@ export class PortfolioSectionComponent {
       projectSkills: ['HTML', 'CSS', 'JAVASCRIPT', 'FIREBASE'],
       projectImage: './assets/img/mockups/join-mockup.svg',
       projectDescription: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
-      projectLink: "http://polloloco.patrick-gogolin.de/",
+      projectLink: "https://join.patrick-gogolin.de/",
       githubLink: "https://github.com/Patrick-Gogolin/Join",
     },
     {
@@ -51,8 +51,8 @@ export class PortfolioSectionComponent {
       projectSkills: ['HTML', 'CSS', 'JAVASCRIPT'],
       projectImage: './assets/img/mockups/pokemon-mockup.svg',
       projectDescription: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      projectLink: "http://polloloco.patrick-gogolin.de/",
-      githubLink: "https://github.com/Patrick-Gogolin/Pokedex-FINAL",
+      projectLink: "https://pokedex.patrick-gogolin.de/",
+      githubLink: "https://github.com/Patrick-Gogolin/Pokedex",
     }
   ]
 }

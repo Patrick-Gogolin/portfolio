@@ -56,6 +56,9 @@
         "need-a-developer": "Need a Frontend developer?",
         "call-to-contact": "Contact me!"
     },
+    "email-successfully-sent": {
+        "headline": "Email successfully sent !"
+    },
     "contactform": {
         "name-input": "Your name",
         "email": "Your email",

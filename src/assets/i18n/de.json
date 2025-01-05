@@ -56,6 +56,9 @@
         "need-a-developer": "Brauchen Sie einen Frontend Entwickler?",
         "call-to-contact": "Kontaktieren Sie mich!"
     },
+    "email-successfully-sent": {
+        "headline": "Email erfolgreich abgesendet !"
+    },
     "contactform": {
         "name-input": "Ihr Name",
         "email": "Ihre Email",

@@ -11,8 +11,13 @@
             <p>{{ "contact.contact-me" | translate}}</p><br>
             <p>{{ "contact.need-a-developer" | translate}} <span class="contact-me-span">{{ "contact.call-to-contact" | translate}}</span></p>
         </div>
-        <app-contactform></app-contactform>
+        @if(emailSent) {
+            <app-email-successfully-sent />
+        }
+        @else {
+            <app-contactform (emailSent)="sendEmail()"></app-contactform>
+        }
     </div>
     <img (click)="scrollToTop()" class="arrow-up" src="./assets/img/contact-section/go-up-button.svg" alt="up-arrow">
-    <img class="purple-shadow" src="./assets/img/contact-section/purple-shadow-contact-section.svg" alt="">
+    <img class="purple-shadow" src="./assets/img/contact-section/purple-shadow-contact-section.svg" alt="purple shadow">
 </div>

@@ -3,7 +3,7 @@
         src="{{ project?.projectImage }}" alt="">
     <div class="button-wrapper">
         <a [href]="project?.githubLink" target="_blank" class="button">Github</a>
-        <a [href]="'https://www.google.de/'" target="_blank" class="button">Live test</a>
+        <a [href]="project?.projectLink" target="_blank" class="button">Live test</a>
     </div>
     <div (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)" (touchend)="onTouchEnd()"
         class="overlayer">
