@@ -11,4 +11,8 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class BurgerMenuComponent {
    @Input() isActive: boolean = false;
    @Input() initialized: boolean = false;
+
+   closeBurgerMenu() {
+    this.isActive = false;
+  }
 }

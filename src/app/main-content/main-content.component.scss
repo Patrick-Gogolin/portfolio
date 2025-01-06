@@ -1,3 +1,13 @@
 section {
     position: relative;
 }
+
+app-about-me-section {
+    scroll-margin-top: -320px;
+}
+
+@media screen and (min-width:660px) {
+    app-about-me-section {
+        scroll-margin-top: 0px;
+    }
+}

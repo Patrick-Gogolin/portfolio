@@ -1,8 +1,8 @@
 <div class="burger-menu" [class]="{'slided-in': initialized && isActive, 'slided-out': initialized && !isActive}">
     <div class="anchor-tags-wrapper">
-        <a href="#about-me">{{"header.about-me" | translate}}</a>
-        <a href="#skills">{{"header.skills" | translate}}</a>
-        <a href="#portfolio">{{"header.portfolio" | translate}}</a>
-        <a href="#contact">{{"header.contact" | translate}}</a>
+        <a (click)="closeBurgerMenu()" href="#about-me">{{"header.about-me" | translate}}</a>
+        <a (click)="closeBurgerMenu()" href="#skills">{{"header.skills" | translate}}</a>
+        <a (click)="closeBurgerMenu()" href="#portfolio">{{"header.portfolio" | translate}}</a>
+        <a (click)="closeBurgerMenu()" href="#contact">{{"header.contact" | translate}}</a>
     </div>
 </div>
