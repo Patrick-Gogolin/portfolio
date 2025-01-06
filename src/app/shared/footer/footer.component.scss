@@ -1,5 +1,6 @@
 footer {
     background-color: #141D2F;
+    border-top: solid 2px #70E61C;
 }
 
 .footer-content-wrapper {
@@ -9,7 +10,6 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    border-top: solid 2px #70E61C;
     padding-block: 3em;
 
     >p {

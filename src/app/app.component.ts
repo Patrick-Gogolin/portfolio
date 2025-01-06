@@ -14,16 +14,14 @@ import 'aos/dist/aos.css';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-
-
   title = 'portfolio';
 
   ngOnInit(): void {
     AOS.init({
       offset: 200,
       easing: 'ease-in-out',
-      duration: 800,
-      delay: 250
+      duration: 600,
+      delay: 100
     });
   }
 }
