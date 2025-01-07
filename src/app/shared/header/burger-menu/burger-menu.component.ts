@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -11,8 +11,10 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class BurgerMenuComponent {
    @Input() isActive: boolean = false;
    @Input() initialized: boolean = false;
+   @Output() linkClicked = new EventEmitter<void>()
 
    closeBurgerMenu() {
+    this.linkClicked.emit();
     this.isActive = false;
   }
 }
