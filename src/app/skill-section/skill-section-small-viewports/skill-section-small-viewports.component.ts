@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HostListener } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -24,15 +23,11 @@ export class SkillSectionSmallViewportsComponent {
     this.isTouched = false;
   }
 
-  @HostListener('touchstart', ['$event'])
-  onTouchStart(event: TouchEvent): void {
-    const target = event.target as HTMLImageElement;
-    const lastIcon = 'continue-learning.svg';
-
-    if (target instanceof HTMLImageElement) {
-      if (target.src.includes(lastIcon)) {
-        event.preventDefault();
-      }
+  handleTouchStart(event: TouchEvent, index: number): void {
+    if (index === this.icons.length - 1) {
+      this.startTouch();
+      event.preventDefault();
     }
+    return;
   }
 }

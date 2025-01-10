@@ -11,8 +11,8 @@
         <div>
             <img class="skill-icons"
                 [src]="'./assets/img/skills-section-icons/' + (i === icons.length - 1 && isTouched ? 'hover-continue-learning.svg' : icons[i])"
-                (touchstart)="i === icons.length - 1 && startTouch()"
-                (touchend)="i === icons.length - 1 && endOfTouch()">
+                (touchstart)="handleTouchStart($event, i)"
+                (touchend)="endOfTouch()">
         </div>
         }
     </div>

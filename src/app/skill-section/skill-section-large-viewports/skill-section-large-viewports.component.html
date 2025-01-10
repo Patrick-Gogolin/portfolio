@@ -5,8 +5,8 @@
             <img [class]="skillIcons(icons, i)" [src]="'./assets/img/skills-section-icons/' + (i === icons.length - 1 && (hover || isTouched) ? 'hover-' + icons[i] : icons[i])"
                 alt="skill-icon" (mouseenter)="i === icons.length - 1 ? hover = true : null"
                 (mouseleave)="i === icons.length - 1 ? hover = false : null"
-                (touchstart)="i === icons.length - 1 && startTouch()"
-                (touchend)="i === icons.length - 1 && endOfTouch()">
+                (touchstart)="handleTouchStart($event, i)"
+                (touchend)="endOfTouch()">
         </div>
         }
     </div>
