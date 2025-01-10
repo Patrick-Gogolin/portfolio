@@ -1,13 +1,13 @@
 <div class="contact-form">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <div>
+        <div class="wrapper">
             <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" [class]="returnBorder(name)"
                 id="name" name="firstname" [placeholder]="'contactform.name-input' | translate" aria-label="First Name" required>
             @if (!name.valid && name.touched && !name.disabled) {
             <span class="error-message">{{ "contactform.name-required" | translate}}</span>
             }
         </div>
-        <div>
+        <div class="wrapper">
             <input #email="ngModel" [(ngModel)]="contactData.email" type="email" [class]="returnBorder(email)"
                 id="email" name="email" [placeholder]="'contactform.email' | translate" aria-label="Email" required
                 pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
@@ -15,7 +15,7 @@
             <span class="error-message">{{ "contactform.email-required" | translate}}</span>
             }
         </div>
-        <div>
+        <div class="wrapper-textarea">
             <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" [class]="returnBorder(message)"
                 id="message" name="message" [placeholder]="'contactform.message' | translate" style="height:200px" aria-label="Subject"
                 required></textarea>
@@ -23,7 +23,7 @@
             <span class="error-message">{{ "contactform.message-required" | translate}}</span>
             }
         </div>
-        <div>
+        <div class="wrapper">
             <div class="checkbox-wrapper">
                 <label class="checkbox-label">
                     <input #privacyPolicy="ngModel" type="checkbox" id="privacyPolicy" name="privacyPolicy"

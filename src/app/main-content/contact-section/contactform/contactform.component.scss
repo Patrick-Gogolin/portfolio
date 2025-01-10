@@ -179,6 +179,14 @@ textarea.valid-border {
   transform: rotate(45deg);
 }
 
+.wrapper {
+  height: 60px;
+}
+
+.wrapper-textarea {
+  height: 230px;
+}
+
 @media screen and (min-width: 660px) {
   .contact-form {
     padding: 50px 24px;
