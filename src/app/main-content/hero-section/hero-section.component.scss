@@ -156,7 +156,7 @@ button {
 @media (hover: hover) and (pointer: fine) {
     button:hover {
         background-color: #9747FF;
-        transform: scale(1.05);
+        box-shadow: 6px 6px 10px 0px #00000050; /* Visueller Effekt */
     }
 }
 
